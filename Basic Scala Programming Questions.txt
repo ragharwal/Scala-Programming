@@ -27,3 +27,17 @@ a = a*4;
 val tempInF = 91.4
 val tempInC = (5*(tempInF-32))/9
 print("Temperature in Celcius is: "+tempInC)
+
+//Write a program using scala to print the sum of first 5 prime numbers
+for(i<-2 to 12){
+var prime=1
+for(j<-2 to i/2){
+if(i%j==0){
+prime = 0
+}
+}
+if (prime==1){
+sum=sum+i
+}
+}
+println("sum is : "+sum)
